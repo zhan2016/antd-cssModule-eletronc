@@ -1,0 +1,51 @@
+.columnArea
+{
+  width: 49%;
+  height: 100%;
+  float: left;
+  padding-top: 58px;
+  padding-bottom: 5px;
+
+}
+.variableArea
+{
+  width: 49%;
+  height: 100%;
+  float: right;
+  padding-top: 58px;
+}
+.toolbar
+{
+  height: 58px;
+  width: 100%;
+  line-height: 58px;
+  margin-top: -58px;
+}
+.content
+{
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  height: 90%;
+  overflow-y: auto;
+}
+.variableToolbar
+{
+  height: 58px;
+  width: 100%;
+  line-height: 58px;
+  margin-top: -58px;
+  display: flex;
+  flex-direction: row;
+align-items: center;
+}
+.startAnalysisBtn
+{
+    width: 190px;
+}
+.parameter
+{
+  margin-left: 5px;
+
+}

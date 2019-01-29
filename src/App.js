@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-//import './App.css';
-import {Button} from 'antd';
-import  './test.scss';
+import StaHomePage from './UI/StaHomePage';
+import './App.css';
+import './UI/publiccss/public.css'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-            <Button styleName="Mystyle">come on</Button>
-        </header>
+          <StaHomePage />
       </div>
     );
   }

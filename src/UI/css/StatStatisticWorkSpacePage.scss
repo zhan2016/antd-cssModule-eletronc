@@ -1,0 +1,30 @@
+.homebaseContainer
+{
+  display: table-row;
+}
+.functionArea
+{
+  width: 280px;
+  min-width: 225px;
+  height: 572px;
+  padding-left: 15px;
+  display: table-cell;
+  position: relative;
+  vertical-align: top;
+  overflow-y: auto;
+}
+.workspaceArea
+{
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  background-color: #fff;
+  padding: 0 15px 7px 15px;
+  border-radius: 4px;
+}
+.collapseArea
+{
+  height: 100%;
+  overflow-y: auto;
+}
+

@@ -1,0 +1,22 @@
+.radioBtnContainer
+{
+    display: flex;
+  flex-direction: column;
+}
+.radioBtn
+{
+  width: 90%;
+  margin: 5px;
+  font-size: 12px;
+  white-space: normal;
+
+}
+.radioBtnSelect
+{
+  width: 90%;
+  margin: 5px;
+  font-size: 12px;
+  background-color: #40a9ff !important;
+  color: white !important;
+
+}

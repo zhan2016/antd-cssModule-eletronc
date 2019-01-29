@@ -1,0 +1,76 @@
+.homecontainer
+{
+  display: flex;
+  flex-direction: column;
+}
+.hometoolbar
+{
+  width: 100%;
+  max-width: 100%;
+  min-width: 980px;
+  height: 60px;
+  padding-right: 5px;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 2px 0 #D6D1D1;
+
+}
+.homecontent
+{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 74px;
+  left: 0;
+  display: table;
+  min-width: 1080px;
+  background-color: #ebeef5;
+}
+.toolbarLogo
+{
+  height: 80%;
+  float: left;
+  margin: 5px 5px 5px 30px;
+  vertical-align: middle;
+}
+.menucontainer
+{
+  height: 100%;
+  float: right;
+  margin: 5px 5px 5px 30px;
+  vertical-align: middle;
+}
+.menuList
+{
+   float: right;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.menuItem
+{
+  height: 100%;
+  padding: 0 18px;
+  float: left;
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: none;
+}
+.menuItem:hover
+{
+  cursor: pointer;
+  background-color: #ebeef5;
+}
+.userInfo
+{
+   float: right;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.userInfo:hover
+{
+  cursor: pointer;
+}
