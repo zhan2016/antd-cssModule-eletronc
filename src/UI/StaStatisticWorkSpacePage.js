@@ -5,6 +5,7 @@ import StaRadioButtonList from './Component/StaRadioButtonList';
 import StaStatisticPageStore from '../Store/StaStatisticPageStore';
 import StaWorkSpaceContent from './Component/StaWorkSpaceContent';
 import {Provider} from 'mobx-react';
+import StaResultModal from './StaResultModal';
 
 const Panel = Collapse.Panel;
 const FunctionList = [
@@ -99,7 +100,28 @@ const customPanelStyle = {
 let StaStatisticStore = new StaStatisticPageStore();
 
 class  StaStatisticWorkSpacePage extends  React.Component{
-
+    constructor(props)
+    {
+        super(props);
+        this.state={
+            resultModalVisible:false
+        }
+    }
+    _handleOK = ()=>{
+        this.setState({
+            resultModalVisible:false
+        })
+    }
+    _handleCacel = ()=>{
+        this.setState({
+            resultModalVisible:false
+        })
+    };
+    _startAnalysisClick = ()=>{
+        this.setState({
+            resultModalVisible:true
+        })
+    }
         render()
         {
             return(
@@ -127,9 +149,10 @@ class  StaStatisticWorkSpacePage extends  React.Component{
                     </Collapse>
                 </div>
                 <div styleName="workspaceArea">
-                    <StaWorkSpaceContent />
+                    <StaWorkSpaceContent startAnalysisHandle={this._startAnalysisClick}/>
                 </div>
-
+                <Button styleName={"showresultBtn"} onClick={()=>{this.setState({resultModalVisible:!this.state.resultModalVisible})}}  icon="eye"></Button>
+                <StaResultModal visible={this.state.resultModalVisible}  handleOk={this._handleOK} handleCancel={this._handleCacel}/>
             </div>
             </Provider>)
         }

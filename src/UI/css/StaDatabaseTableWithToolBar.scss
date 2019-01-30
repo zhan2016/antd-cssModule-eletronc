@@ -1,0 +1,40 @@
+.StaDatabaseTablecontainer
+{
+    display: flex;
+  flex-direction: column;
+}
+.StaDatabaseTabletoolbar
+{
+  display: flex;
+  flex-direction: row;
+  -webkit-box-shadow: 0 2px 3px #eee;
+  box-shadow: 0 2px 3px #eee;
+}
+.StaDatabaseTableButtonGrounp
+{
+  margin-top: 5px;
+}
+.StaDatabaseTabletablecontainer
+{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: visible;
+}
+.StaDatabaseTableCSS
+{
+  border: none;
+}
+.StaDatabaseTableCSS .rt-th
+{
+  border: none!important;
+
+}
+.StaDatabaseTablecontainer table td{
+  font-size: 15px;
+}
+.StaDatabaseTablecontainer th
+{
+  font-size: 14px;
+}

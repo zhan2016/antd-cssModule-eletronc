@@ -17,7 +17,7 @@ const methodConfig = {
                 {
                     id:'y',
                     label:'Y定量',
-                    datatype:['enum'],
+                    datatype:['enum2'],
                     tooltip:'玉面小飞龙',
                     minrowCount:1,
                     maxrowCount:1

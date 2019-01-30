@@ -1,9 +1,9 @@
-body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div {
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, img, div {
     margin: 0;
     padding: 0;
     border: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 ul, menu, dir {
     display: block;

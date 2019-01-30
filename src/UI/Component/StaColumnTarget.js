@@ -2,36 +2,63 @@ import React from 'react';
 import {Droppable} from 'react-beautiful-dnd';
 import {inject, observer} from "mobx-react/index";
 import  StaColumnSource from './StaColumnSource';
-import '../css/StaColumnTarget.scss'
+import '../css/StaColumnTarget.scss';
 
 @inject("StatisticStore")
 @observer
 class  StaColumnTarget extends  React.Component{
     render()
     {
-        console.log('target render');
-        const {DropableID,CurrentDragDataType} = this.props;
-        const getItemStyle = (isDragging, draggableStyle) => ({
-            // some basic styles to make the items look a bit nicer
-            userSelect: 'none',
-            padding: 8 * 2,
-            margin: `0 0 8px 0`,
+        const {DropableID,CurrentDragDataType: CurrentDragSource} = this.props;
 
-            // change background colour if dragging
-            background: isDragging ? 'lightgreen' : 'grey',
-
-            // styles we need to apply on draggables
-            ...draggableStyle
-        });
-        const getListStyle = isDraggingOver => ({
+        const getListStyle = (isDraggingOver) => ({
             background: isDraggingOver ? 'lightblue' : 'lightgrey',
-            padding: 8,
-            width: '100%'
+            padding: 3,
+            width: '100%',
+            height:'100%'
         });
+        const getContainerStyle=(height) =>({
+            height:`${100.0 / height}%`,
+            padding:'2px',
+            paddingBottom: '3px',
+            border:'2px solid  #f5f5f5',
+            borderRadius:'2px',
+            overflowY:'auto'
+        })
         let columns = this.props.StatisticStore.GetColumnsList(DropableID);
+        let columnContent = this.props.StatisticStore.GetSpecifyColumn(DropableID);
+        let isDroppDisable = false;
+        let height = this.props.StatisticStore.GetSelectColumnCount;
+        if(columnContent)
+        {
+            if(CurrentDragSource)
+            {
+                if(DropableID !== CurrentDragSource.droppableId)
+                {
+                    let columnsource = this.props.StatisticStore.GetColumnsList(CurrentDragSource.droppableId);
+                    if(columnsource[CurrentDragSource['index']]) {
 
-        return(<div styleName="targetDiv">
-            <Droppable droppableId={DropableID}>
+                        let dragSourceDataType = columnsource[CurrentDragSource['index']]['type'];
+                        console.log(`dragSourceDataType:${dragSourceDataType}`);
+                        if (!columnContent['datatype'].includes(dragSourceDataType)) {
+                            //不符合此列的数据类型 不允许drop
+                            isDroppDisable = true;
+                        }
+                        if (columns.length >= columnContent['maxrowCount']) {
+                            //达到最大行数不准drop
+                            isDroppDisable = true;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+        console.log(`height:${height}`);
+       // console.log(`isDroppDisable:${JSON.stringify(isDroppDisable)}`)
+        return(<div style={getContainerStyle(height)}>
+            <Droppable droppableId={DropableID} isDropDisabled={isDroppDisable}>
                 {(provided, snapshot) => (
                     <div
                         ref={provided.innerRef}

@@ -7,6 +7,7 @@ class StaStatisticPageStore {
         this._currentSelectFunction = '';
         this._sourceColumns = [];
         this._selectColumns = {};
+        this._resultList = [];
 
     }
     @observable _sourceColumns;
@@ -41,7 +42,7 @@ class StaStatisticPageStore {
         }
         else
         {
-            console.log(`设置列:${columnname}:${JSON.stringify(array)}`)
+           // console.log(`设置列:${columnname}:${JSON.stringify(array)}`)
             this._selectColumns[columnname] = array;
         }
     }
@@ -69,6 +70,7 @@ class StaStatisticPageStore {
     }
     GetSpecifyColumn(columnID)
     {
+        //获取具体某个维度的配置项
         let columncontent = Config.methodConfig[this._currentSelectFunction]["columns"]['columnsContent']
         if(columncontent)
         {
@@ -86,13 +88,41 @@ class StaStatisticPageStore {
         {
             return undefined;
         }
-
     }
     @computed
     get GetSelectColumnObject()
     {
         return this._selectColumns;
     }
+    @computed
+    get GetSelectColumnCount()
+    {
+        //获取目标列的数量
+        return Object.keys(this._selectColumns).length;
+    }
+
+    //#region 结果集页面列表
+    @observable _resultList;
+
+    @computed
+    get resultList()
+    {
+        return this._resultList;
+    }
+    @action
+    setResultList(array)
+    {
+        this._resultList = array;
+    }
+    @action
+    pushToResultList(result)
+    {
+        if(result)
+        {
+            this.resultList.push(result);
+        }
+    }
+    //#endregion
 
 }
 

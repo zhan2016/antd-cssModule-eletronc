@@ -5,6 +5,7 @@ import {inject,observer} from 'mobx-react';
 import  { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import StaColumnSource from './StaColumnSource';
 import StaColumnTarget from './StaColumnTarget';
+import {formatDateFunc} from './Util';
 const Option = Select.Option;
 const methodConfig = {
     "频数":{
@@ -182,7 +183,7 @@ class StaWorkSpaceContent extends React.Component{
     {
         super(props);
         this.state={
-            currentDragDataType:''
+            currentDragSource:''
         }
     }
     _reorder = (list, startIndex, endIndex)=>{
@@ -195,7 +196,7 @@ class StaWorkSpaceContent extends React.Component{
         const sourceClone = Array.from(source);
         const destClone = Array.from(destination);
         const [removed] = sourceClone.splice(droppableSource.index, 1);
-        console.log(`destination:${JSON.stringify(destination)} Source:${source}`);
+        //console.log(`destination:${JSON.stringify(destination)} Source:${source}`);
         destClone.splice(droppableDestination.index, 0, removed);
 
         const result = {};
@@ -208,12 +209,23 @@ class StaWorkSpaceContent extends React.Component{
         return result;
     };
     _onDragStart = (start) =>{
-
+         console.log(`start:${JSON.stringify(start)}`)
+         let source = start.source;
+         if(source)
+         {
+             let columns = this.props.StatisticStore.GetColumnsList(source.droppableId);
+             if(columns)
+             {
+                 this.setState({
+                     currentDragDataType:source
+                 })
+             }
+         }
     }
     _onDragEnd= (result)=>{
         const { source, destination } = result;
         // dropped outside the list
-        console.log(`destination:${JSON.stringify(destination)}`);
+        //console.log(`destination:${JSON.stringify(destination)}`);
         if (!destination) {
             return;
         }
@@ -223,7 +235,7 @@ class StaWorkSpaceContent extends React.Component{
                 source.index,
                 destination.index
             );
-            console.log(`destination.droppableId:${destination.droppableId}`);
+           // console.log(`destination.droppableId:${destination.droppableId}`);
             this.props.StatisticStore.SetColumnList(destination.droppableId, items);
         } else {
             const result = this._move(
@@ -238,22 +250,39 @@ class StaWorkSpaceContent extends React.Component{
     };
     _getTargetColumn = (targetObjects)=>{
         let columns = [];
-        Object.keys(targetObjects).forEach(function(key,index){
+       // console.log(`this.state.currentDragDataType:${this.state.currentDragDataType}`);
+        Object.keys(targetObjects).forEach((key,index) => {
             console.log(key);
             if(key)
-                columns.push(<StaColumnTarget DropableID={key}/>);
+                columns.push(<StaColumnTarget DropableID={key} CurrentDragDataType={this.state.currentDragDataType}/>);
         })
         return columns;
 
+    };
+    _startAnalysisiClick = ()=>{
+        //TODO 校验条件，提交到数据库，获取返回的唯一ID，更新结果集list
+        let newResult = {
+            title:this.props.StatisticStore.CurrentSelectFunc,
+            id:formatDateFunc(new Date(),'yyyy-MM-dd hh:mm:ss'),
+        };
+        this.props.StatisticStore.pushToResultList(newResult);
+        console.log(`this.props.StatisticStore.result:${JSON.stringify(this.props.StatisticStore.resultList)}`);
+        if(this.props.startAnalysisHandle)
+        {
+            this.props.startAnalysisHandle();
+        }
     }
     render()
     {
-        const getListStyle = isDraggingOver => ({
+        const getListStyle = (isDraggingOver,sourcolumnHeight) => (sourcolumnHeight !== 0 ?{
             background: isDraggingOver ? 'lightblue' : 'lightgrey',
             padding: 8,
             width: '100%'
+        }:{
+            width: '100%',
+            height:'100%'
         });
-        console.log(`${JSON.stringify(this.props.StatisticStore.GetSelectColumnObject)}`);
+        let sourcolumnHeight = this.props.StatisticStore.GetColumnsList('sourceColumn').length;
         return(
             <React.Fragment>
                 <DragDropContext onDragEnd={this._onDragEnd} onDragStart={this._onDragStart}>
@@ -267,7 +296,7 @@ class StaWorkSpaceContent extends React.Component{
                         {(provided, snapshot) => (
                             <div
                                 ref={provided.innerRef}
-                                style={getListStyle(snapshot.isDraggingOver)}>
+                                style={getListStyle(snapshot.isDraggingOver,sourcolumnHeight)}>
                                 {
                                     this.props.StatisticStore.GetColumnsList('sourceColumn') &&this.props.StatisticStore.GetColumnsList('sourceColumn').length>0 ?
                                         this.props.StatisticStore.GetColumnsList('sourceColumn').map((column,index) =>{
@@ -282,7 +311,7 @@ class StaWorkSpaceContent extends React.Component{
             </div>
             <div styleName="variableArea">
                 <div styleName="variableToolbar">
-                <Button type={"primary"} styleName={"startAnalysisBtn"}>{`开始${this.props.StatisticStore.CurrentSelectFunc}分析`}</Button>
+                <Button type={"primary"} styleName={"startAnalysisBtn"} onClick={this._startAnalysisiClick}>{`开始${this.props.StatisticStore.CurrentSelectFunc}分析`}</Button>
                     <div styleName="parameter">
                 <StaParameter analysisParameter={this.props.StatisticStore.CurrentSelectFunc && methodConfig[this.props.StatisticStore.CurrentSelectFunc]  ?  methodConfig[this.props.StatisticStore.CurrentSelectFunc].analysisParameter : undefined}/>
                     </div>

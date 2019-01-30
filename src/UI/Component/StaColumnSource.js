@@ -11,11 +11,11 @@ class  StaColumnSource extends  React.Component{
         const getItemStyle = (isDragging, draggableStyle) => ({
             // some basic styles to make the items look a bit nicer
             userSelect: 'none',
-            padding: 8 * 2,
-            margin: `0 0 8px 0`,
-
+            padding: '2px',
+            margin: `0 0 3px 0`,
+            borderRadius:'2px',
             // change background colour if dragging
-            background: isDragging ? 'lightgreen' : 'white',
+            background: isDragging ? 'lightgreen' : 'lightgrey',
 
             // styles we need to apply on draggables
             ...draggableStyle
@@ -35,7 +35,8 @@ class  StaColumnSource extends  React.Component{
                         snapshot.isDragging,
                         provided.draggableProps
                             .style
-                    )}>
+                    )}
+                >
                     {columnName}
                 </div>
             )}
