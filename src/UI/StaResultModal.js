@@ -72,7 +72,7 @@ class  StaResultModal extends  React.Component{
                 title="结果查看"
                 onOk={this.props.handleOk}
                 onClose={this.props.handleCancel}
-                width={720}
+                width={1000}
             >
                 {
                     this.props.StatisticStore.resultList && this.props.StatisticStore.resultList.length > 0?(
@@ -95,7 +95,6 @@ class  StaResultModal extends  React.Component{
                         </Tabs>
                     ):<Empty description={"还没有创建分析"}/>
                 }
-
             </Drawer>
         );
     }

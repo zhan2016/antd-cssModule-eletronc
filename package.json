@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/data-set": "^0.10.1",
     "@babel/core": "7.1.6",
     "@babel/plugin-proposal-decorators": "^7.3.0",
     "@svgr/webpack": "2.4.1",
@@ -15,6 +16,7 @@
     "babel-plugin-react-css-modules": "^5.0.0",
     "babel-preset-react-app": "^7.0.0",
     "bfj": "6.1.1",
+    "bizcharts": "^3.4.3",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
     "css-loader": "^2.1.0",

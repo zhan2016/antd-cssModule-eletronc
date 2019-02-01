@@ -28,6 +28,7 @@ class StaStatisticPageStore {
                     sourcecolumns =  sourcecolumns.concat(Config.columns[datatype])
                 });
                 this._sourceColumns = sourcecolumns;
+                this._selectColumns={};
                 columns.columnsContent.map((columnitem) =>{
                     this._selectColumns[columnitem.id] = [];
                 })

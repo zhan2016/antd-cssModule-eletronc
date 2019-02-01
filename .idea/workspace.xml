@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7743da65-5d26-419e-8663-d7d08bba5ed8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Store/StaDatabasePageStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Component/StaDatabaseTableWithToolBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Component/StaRadioButtonDBList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Component/StaResultTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Component/Util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/StaDataBaseManagePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/StaResultModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/css/StaDataBaseManagePage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/css/StaDatabaseTableWithToolBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/css/StaResultTab.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Component/StaResultChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Component/StaResultParagraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Component/StatResultTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Store/StaConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/StaConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Store/StaStatisticPageStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/StaStatisticPageStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Component/StaColumnSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Component/StaColumnSource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/StaHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/StaHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/css/StaColumnTarget.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/StaColumnTarget.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/css/StaRadioButtonList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/StaRadioButtonList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/css/StatStatisticWorkSpacePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/StatStatisticWorkSpacePage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/publiccss/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/publiccss/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Component/StaResultTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Component/StaResultTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Component/Util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Component/Util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/StaResultModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/StaResultModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/css/StaResultTab.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/StaResultTab.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StaDataBaseManagePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/StaDataBaseManagePage.js">
+      <file leaf-file-name="StaResultModal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/StaResultModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="1311">
+              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -51,34 +39,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaDatabaseTableWithToolBar.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UI/Component/StaDatabaseTableWithToolBar.js">
+      <file leaf-file-name="StaConfig.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/StaConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+            <state relative-caret-position="133">
+              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaDatabaseTableWithToolBar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/css/StaDatabaseTableWithToolBar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaStatisticWorkSpacePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="120" column="23" lean-forward="true" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#79#90#0" />
+                <element signature="e#982#2051#0" />
+                <element signature="e#2062#3154#0" />
+                <element signature="e#3165#4257#0" />
+                <element signature="e#3167#4160#0" />
+                <element signature="e#4175#5180#0" />
               </folding>
             </state>
           </provider>
@@ -87,8 +59,8 @@
       <file leaf-file-name="StaWorkSpaceContent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="272" column="9" lean-forward="true" selection-start-line="272" selection-start-column="9" selection-end-line="272" selection-end-column="9" />
+            <state relative-caret-position="182">
+              <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -96,35 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaHomePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/StaHomePage.js">
+      <file leaf-file-name="StaColumnTarget.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/Component/Util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaResultModal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/StaResultModal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+            <state relative-caret-position="237">
+              <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -135,17 +83,14 @@
       <file leaf-file-name="StaStatisticPageStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Store/StaStatisticPageStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+            <state relative-caret-position="209">
+              <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
-                <element signature="n#!!block;n#_setCurrentSelectFunc#0;n#StaStatisticPageStore#0" />
-                <element signature="e#1254#1522#0" />
                 <element signature="n#!!block;n#CurrentSelectFunc#0;n#StaStatisticPageStore#0" />
                 <element signature="n#!!block;n#GetColumnsList#0;n#StaStatisticPageStore#0" />
                 <element signature="n#!!block;n#GetColumnContent#0;n#StaStatisticPageStore#0" />
                 <element signature="n#!!block;n#GetSpecifyColumn#0;n#StaStatisticPageStore#0" />
-                <element signature="n#!!block;n#GetSelectColumnCount#0;n#StaStatisticPageStore#0" />
               </folding>
             </state>
           </provider>
@@ -154,11 +99,56 @@
       <file leaf-file-name="StaResultTab.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultTab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="45" column="111" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="111" />
+            <state relative-caret-position="380">
+              <caret line="80" column="62" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="62" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaResultChart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultChart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/Component/Util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="168" column="10" lean-forward="true" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatResultTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Component/StatResultTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaResultTab.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/css/StaResultTab.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="931">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -204,7 +194,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/UI/Component/StaRadioButtonList.js" />
         <option value="$PROJECT_DIR$/src/UI/css/StaWorkSpaceContent.scss" />
-        <option value="$PROJECT_DIR$/src/Store/StaConfig.js" />
         <option value="$PROJECT_DIR$/src/UI/css/StaColumnTarget.scss" />
         <option value="$PROJECT_DIR$/src/UI/Component/StaColumnSource.js" />
         <option value="$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js" />
@@ -216,17 +205,22 @@
         <option value="$PROJECT_DIR$/src/UI/css/StatStatisticWorkSpacePage.scss" />
         <option value="$PROJECT_DIR$/src/UI/StaDataBaseManagePage.js" />
         <option value="$PROJECT_DIR$/src/UI/css/StaDataBaseManagePage.scss" />
-        <option value="$PROJECT_DIR$/src/UI/css/StaResultTab.scss" />
         <option value="$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js" />
-        <option value="$PROJECT_DIR$/src/UI/Component/StaResultTab.js" />
-        <option value="$PROJECT_DIR$/src/UI/Component/Util.js" />
         <option value="$PROJECT_DIR$/src/UI/StaHomePage.js" />
         <option value="$PROJECT_DIR$/src/Store/StaDatabasePageStore.js" />
-        <option value="$PROJECT_DIR$/src/Store/StaStatisticPageStore.js" />
         <option value="$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js" />
-        <option value="$PROJECT_DIR$/src/UI/StaResultModal.js" />
         <option value="$PROJECT_DIR$/src/UI/css/StaDatabaseTableWithToolBar.scss" />
         <option value="$PROJECT_DIR$/src/UI/Component/StaDatabaseTableWithToolBar.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/Util.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/StatResultTable.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/StatResultParagraph.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/StaResultParagraph.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/StaResultTab.js" />
+        <option value="$PROJECT_DIR$/src/UI/Component/StaResultChart.js" />
+        <option value="$PROJECT_DIR$/src/UI/css/StaResultTab.scss" />
+        <option value="$PROJECT_DIR$/src/UI/StaResultModal.js" />
+        <option value="$PROJECT_DIR$/src/Store/StaStatisticPageStore.js" />
+        <option value="$PROJECT_DIR$/src/Store/StaConfig.js" />
       </list>
     </option>
   </component>
@@ -247,10 +241,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="150" />
-    <option name="width" value="1280" />
-    <option name="height" value="840" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -351,7 +345,7 @@
       <workItem from="1547864081563" duration="3825000" />
       <workItem from="1547974935653" duration="4422000" />
       <workItem from="1548215512359" duration="4100000" />
-      <workItem from="1548570704920" duration="87697000" />
+      <workItem from="1548570704920" duration="102393000" />
     </task>
     <task id="LOCAL-00001" summary="搭建好css Modules">
       <created>1547602397123</created>
@@ -367,17 +361,23 @@
       <option name="project" value="LOCAL" />
       <updated>1548730191304</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善了显示，设计完成结果显示的逻辑,需要编写结果显示的控件">
+      <created>1548833331933</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548833331933</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114839000" />
+    <option name="totallyTimeSpent" value="129535000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="120" width="1024" height="672" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3825911" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006605" side_tool="true" weight="0.32952926" />
@@ -386,7 +386,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993395" visible="true" weight="0.19626169" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993395" visible="true" weight="0.14978603" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -426,7 +426,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="搭建好css Modules" />
     <MESSAGE value="基本框架搭建完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="基本框架搭建完成" />
+    <MESSAGE value="完善了显示，设计完成结果显示的逻辑,需要编写结果显示的控件" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了显示，设计完成结果显示的逻辑,需要编写结果显示的控件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -442,34 +443,17 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Store/StaConfig.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DragableListTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/build.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/start.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -655,28 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#Droppable#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Store/StaConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-          <folding>
-            <element signature="e#3379#4143#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Component/StaRadioButtonList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -725,23 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/css/StaResultTab.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Component/Util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/StaHomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -752,67 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="120" column="23" lean-forward="true" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Store/StaDatabasePageStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Store/StaStatisticPageStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="n#!!block;n#_setCurrentSelectFunc#0;n#StaStatisticPageStore#0" />
-            <element signature="e#1254#1522#0" />
-            <element signature="n#!!block;n#CurrentSelectFunc#0;n#StaStatisticPageStore#0" />
-            <element signature="n#!!block;n#GetColumnsList#0;n#StaStatisticPageStore#0" />
-            <element signature="n#!!block;n#GetColumnContent#0;n#StaStatisticPageStore#0" />
-            <element signature="n#!!block;n#GetSpecifyColumn#0;n#StaStatisticPageStore#0" />
-            <element signature="n#!!block;n#GetSelectColumnCount#0;n#StaStatisticPageStore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="272" column="9" lean-forward="true" selection-start-line="272" selection-start-column="9" selection-end-line="272" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/StaResultModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultTab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="45" column="111" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="111" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,10 +721,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/StaStatisticWorkSpacePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="120" column="23" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Component/StaDatabaseTableWithToolBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        <state relative-caret-position="209">
+          <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="126" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultParagraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="80" column="62" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StatResultTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaResultChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/css/StaResultTab.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/StaResultModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaWorkSpaceContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/StaColumnTarget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/StaStatisticPageStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!block;n#CurrentSelectFunc#0;n#StaStatisticPageStore#0" />
+            <element signature="n#!!block;n#GetColumnsList#0;n#StaStatisticPageStore#0" />
+            <element signature="n#!!block;n#GetColumnContent#0;n#StaStatisticPageStore#0" />
+            <element signature="n#!!block;n#GetSpecifyColumn#0;n#StaStatisticPageStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/StaConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="e#79#90#0" />
+            <element signature="e#982#2051#0" />
+            <element signature="e#2062#3154#0" />
+            <element signature="e#3165#4257#0" />
+            <element signature="e#3167#4160#0" />
+            <element signature="e#4175#5180#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Component/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="168" column="10" lean-forward="true" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

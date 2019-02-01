@@ -5,9 +5,10 @@ const methodConfig = {
         },
         columns:{
             dateType:['string', 'enum', 'number'],
+            numEquals:[{'1d':'x','2d':'y','3d':'w'},{'1d':'x','2d':'z'}],
             columnsContent:[
                 {
-                    id:'x',
+                    id:'aaaaaa',
                     label:'x定量',
                     datatype:['string','number'],
                     tooltip:'x的分析哦',
@@ -44,7 +45,39 @@ const methodConfig = {
             ]
         },
         columns:{
-            dateType:['string', 'enum', 'number'],
+            dateType:['string', 'number'],
+            columnsContent:[
+                {
+                    id:'x',
+                    label:'x定量',
+                    datatype:['string','number'],
+                    tooltip:'x的分析哦',
+                    minrowCount:1,
+                    maxrowCount:2,
+                },
+                {
+                    id:'y',
+                    label:'Y定量',
+                    datatype:['enum'],
+                    tooltip:'玉面小飞龙',
+                    minrowCount:1,
+                    maxrowCount:1
+                }
+            ]
+        }
+    },
+    "相关":{
+        name:'相关',
+        analysisParameter:{
+            type:'option',
+            options:[
+                'Person相关系数',
+                'Spearman相关系数',
+                'KendaII相关系数',
+            ]
+        },
+        columns:{
+            dateType:['string', 'enum',],
             columnsContent:[
                 {
                     id:'x',
@@ -73,8 +106,8 @@ const methodConfig = {
             ]
         }
     },
-    "相关":{
-        name:'相关',
+    "描述":{
+        name:'描述',
         analysisParameter:{
             type:'option',
             options:[
